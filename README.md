@@ -15,5 +15,8 @@ przykładowo:
 W przypadku opcji _przedział_ kolejne dwa argumenty określają brzegowe artykuły wyświetlanego fragmentu, np:
 >uokik spis przedział "Art. 23c." "Art. 112."
 
-Format podawania końcowych argumentów jest taki jak w spisach treści, więc można go łatwo sprawdzić podając np. odpowiednio
+Format podawania końcowych argumentów jest taki jak w spisach treści, więc można go łatwo sprawdzić podając np.
 >uokik spis całość
+
+czy
+>konstytucja spis całość
