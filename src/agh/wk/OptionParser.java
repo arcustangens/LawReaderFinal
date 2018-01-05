@@ -17,9 +17,16 @@ public class OptionParser{
             else{
                 throw new IllegalArgumentException("Bledne dane: " + args[1]);
             }
-            if(args[2].equals("całość") || args[2].equals("element")){
+            if(args[2].equals("całość") || args[2].equals("element") ||  args[2].equals("przedział")){
                 parsedOptions.setWhatToDisplay(args[2]);
                 if(args[2].equals("element")){
+                    ArrayList<String> directory = new ArrayList<>();
+                    for (int i = 3; i < args.length; i++) {
+                        directory.add(args[i]);
+                    }
+                    parsedOptions.setTargetDirectory(directory);
+                }
+                if(args[2].equals("przedział")){
                     ArrayList<String> directory = new ArrayList<>();
                     for (int i = 3; i < args.length; i++) {
                         directory.add(args[i]);

@@ -80,10 +80,49 @@ public class Element {
         return tmp;
     }
 
-    /*public String toStringBetween(String fromTitle, String toTitle){
-        String result="";
+    public String toStringBetween(String fromTitle, String toTitle){
+        String result = "";
+        boolean flag=false;
+        for(Element child1 : this.children){
+            for(Element child2 : child1.children){
+                for(Element child3 : child2.children) {
+                    if (child3.getListTitle().equals(fromTitle)) {
+                        flag = true;
+                    }
+                    if (flag) {
+                        result += child3.toString();
+                    }
+                    if (child3.getListTitle().equals(toTitle)) {
+                        result += child3.toString();
+                        return result;
+                    }
+                }
+            }
+        }
+        return "";
+    }
 
-    }*/
+    public String toStringBetweenList(String fromTitle, String toTitle){
+        String result = "";
+        boolean flag=false;
+        for(Element child1 : this.children){
+            for(Element child2 : child1.children){
+                for(Element child3 : child2.children) {
+                    if (child3.getListTitle().equals(fromTitle)) {
+                        flag = true;
+                    }
+                    if (flag) {
+                        result += child3.toStringList();
+                    }
+                    if (child3.getListTitle().equals(toTitle)) {
+                        result += child3.toStringList();
+                        return result;
+                    }
+                }
+            }
+        }
+        return "";
+    }
 
     public boolean isHigherThan(Element element){
         return this.getType().isHigherThan(element.getType());

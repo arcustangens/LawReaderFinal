@@ -25,6 +25,9 @@ public class Reader {
                             throw new IllegalArgumentException("Bledne dane.");
                         }
                     }
+                    if(options.getWhatToDisplay().equals("przedział")){
+                        System.out.print(parserK.konstytucja.toStringBetween(options.getTargetDirectory().get(0),options.getTargetDirectory().get(1)));
+                    }
                 }
                 else{
                     if(options.getWhatToDisplay().equals("całość"))
@@ -41,6 +44,9 @@ public class Reader {
                         else{
                             throw new IllegalArgumentException("Bledne dane.");
                         }
+                    }
+                    if(options.getWhatToDisplay().equals("przedział")){
+                        System.out.print(parserK.konstytucja.toStringBetweenList(options.getTargetDirectory().get(0),options.getTargetDirectory().get(1)));
                     }
                 }
                 break;
@@ -63,6 +69,9 @@ public class Reader {
                             throw new IllegalArgumentException("Bledne dane.");
                         }
                     }
+                    if(options.getWhatToDisplay().equals("przedział")){
+                        System.out.print(parserU.uokik.toStringBetween(options.getTargetDirectory().get(0),options.getTargetDirectory().get(1)));
+                    }
                 }
                 else{
                     if(options.getWhatToDisplay().equals("całość"))
@@ -79,6 +88,9 @@ public class Reader {
                         else{
                             throw new IllegalArgumentException("Bledne dane.");
                         }
+                    }
+                    if(options.getWhatToDisplay().equals("przedział")){
+                        System.out.print(parserU.uokik.toStringBetweenList(options.getTargetDirectory().get(0),options.getTargetDirectory().get(1)));
                     }
                 }
                 break;
