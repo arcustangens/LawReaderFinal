@@ -12,7 +12,7 @@ W przypadku wyboru opcji _element_ kolejne argumenty oddzielone spacjami oznacza
 przykładowo:
 >konstytucja treść element "Roz. I" "Sek. 3." "Art. 1."
 
-W przypadku opcji _przedział_ kolejne dwa argumenty określają krańce wyświetlanego fragmentu, np:
+W przypadku opcji _przedział_ kolejne dwa argumenty określają brzegowe artykuły wyświetlanego fragmentu, np:
 >uokik spis przedział "Art. 23c." "Art. 112."
 
 Format podawania końcowych argumentów jest taki jak w spisach treści, więc można go łatwo sprawdzić podając np. odpowiednio
