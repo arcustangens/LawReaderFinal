@@ -6,7 +6,7 @@ Pierwszy argument _konstytucja_ / _uokik_ określa przeglądany i parsowany doku
 Drugi argument _treść_ / _spis_ określa sposób wyświetlania, odpowiednio pełna treść wybranych fragmentów lub ich spis treści.
 
 Trzeci argument _całość_ / _element_ / _przedział_ określa wyświetlaną część dokumentu, _całość_ oznacza cały dokument, 
-_element_ pojedynczy element (jak rozdział czy sekcja) wraz ze składowymi, _przedział_ oznacza fragment dokumentu ograniczony z dwóch stron (np. przez dwa artykuły).
+_element_ pojedynczy element (jak rozdział czy sekcja) wraz ze składowymi, _przedział_ oznacza fragment dokumentu ograniczony z dwóch stron przez dwa artykuły.
 
 W przypadku wyboru opcji _element_ kolejne argumenty oddzielone spacjami oznaczają jaki fragment chcemy wyświetlić, 
 przykładowo:
